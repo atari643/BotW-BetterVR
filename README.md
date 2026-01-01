@@ -22,6 +22,8 @@ While more integrated solutions are being found out, there's probably ways to se
 #### Other Requirements:
 
 * A gaming PC with a CPU that is good at single-threaded workloads (a recent Intel i5 or Ryzen 5 are recommended at least)!
+  * **Don't have a powerful PC?** See the [Shadow PC Setup Guide](/docs/SHADOW_PC_SETUP_EN.md) ([Version Française](/docs/SHADOW_PC_SETUP_FR.md)) for cloud gaming options
+  * For detailed graphics requirements, see [Graphics Requirements Documentation](/docs/GRAPHICS_REQUIREMENTS.md)
 
 * A legal copy of BotW for the Wii U.
 
