@@ -105,7 +105,7 @@ namespace UpdateChecker {
     void CheckForUpdatesAsync() {
         HINTERNET hSession = NULL, hConnect = NULL, hRequest = NULL;
 
-        hSession = WinHttpOpen(L"BotW-BetterVR Update Checker", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+        hSession = WinHttpOpen(L"TotK-BetterVR Update Checker", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
         if (!hSession) {
             Log::print<ERROR>("UpdateChecker: Failed to open WinHTTP session.");
             return;
@@ -118,7 +118,7 @@ namespace UpdateChecker {
             return;
         }
 
-        hRequest = WinHttpOpenRequest(hConnect, L"GET", L"/repos/Crementif/BotW-BetterVR/releases/latest", NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
+        hRequest = WinHttpOpenRequest(hConnect, L"GET", L"/repos/atari643/BotW-BetterVR/releases/latest", NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, WINHTTP_FLAG_SECURE);
         if (!hRequest) {
             Log::print<ERROR>("UpdateChecker: Failed to open request.");
             WinHttpCloseHandle(hConnect);
@@ -178,10 +178,10 @@ namespace UpdateChecker {
                                 }
                                 else {
                                     Log::print<INFO>("UpdateChecker: A new version is available! Current: {}, Latest: {}", CURRENT_VERSION, latestVersion);
-                                    Log::print<INFO>("UpdateChecker: Please download the latest version from https://github.com/Crementif/BotW-BetterVR/releases");
+                                    Log::print<INFO>("UpdateChecker: Please download the latest version from https://github.com/atari643/BotW-BetterVR/releases");
 
                                     std::string mbText;
-                                    mbText += "A new version of BotW-BetterVR is available.\n\n";
+                                    mbText += "A new version of TotK-BetterVR is available.\n\n";
                                     mbText += "Current: " + CURRENT_VERSION + "\n";
                                     mbText += "Latest:  " + latestVersion + "\n\n";
                                     mbText += "Open releases page?\n\n";
@@ -189,7 +189,7 @@ namespace UpdateChecker {
 
                                     const int res = MessageBoxA(NULL, mbText.c_str(), "BetterVR Update Available", MB_YESNOCANCEL | MB_ICONINFORMATION);
                                     if (res == IDYES) {
-                                        ShellExecuteA(NULL, "open", "https://github.com/Crementif/BotW-BetterVR/releases", NULL, NULL, SW_SHOWNORMAL);
+                                        ShellExecuteA(NULL, "open", "https://github.com/atari643/BotW-BetterVR/releases", NULL, NULL, SW_SHOWNORMAL);
                                     }
                                     else if (res == IDCANCEL) {
                                         SaveIgnoredVersionOnce(latestVersion);
