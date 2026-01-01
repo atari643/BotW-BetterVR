@@ -14,7 +14,7 @@ public:
         checkAssert(gameMeta_getTitleId != nullptr && memory_getBase != nullptr && osLib_registerHLEFunction != nullptr, "Failed to get function pointers of Cemu functions! Is this hook being used on Cemu?");
 
         bool isSupportedTitleId = gameMeta_getTitleId() == 0x00050000101C9300 || gameMeta_getTitleId() == 0x00050000101C9400 || gameMeta_getTitleId() == 0x00050000101C9500;
-        checkAssert(isSupportedTitleId, std::format("Expected title IDs for Tears of the Kingdom (00050000-101C9300, 00050000-101C9400 or 00050000-101C9500) but received {:16x}!", gameMeta_getTitleId()).c_str());
+        checkAssert(isSupportedTitleId, std::format("Expected supported title IDs (00050000-101C9300, 00050000-101C9400 or 00050000-101C9500) but received {:16x}!", gameMeta_getTitleId()).c_str());
 
         s_memoryBaseAddress = (uint64_t)memory_getBase();
         checkAssert(s_memoryBaseAddress != 0, "Failed to get memory base address of Cemu process!");
