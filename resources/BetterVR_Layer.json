@@ -6,7 +6,7 @@
     "library_path": "BetterVR_Layer.dll",
     "api_version": "1.2.0",
     "implementation_version": "1",
-    "description": "Vulkan layer used to breath some VR into BotW for Cemu, using OpenXR!",
+    "description": "Vulkan layer used to breath some VR into Tears of the Kingdom for Cemu, using OpenXR!",
     "functions": {
       "vkNegotiateLoaderLayerInterfaceVersion": "VRLayer_NegotiateLoaderLayerInterfaceVersion",
       "vkGetInstanceProcAddr": "VRLayer_GetInstanceProcAddr",

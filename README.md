@@ -1,6 +1,6 @@
 # <img width="3840" height="1037" alt="BetterVRLogo(1)" src="https://github.com/user-attachments/assets/4f6d6ce2-daed-4411-a5c4-8c5d288ac921" />
 
-BetterVR is a VR mod/hook that adds a PC-VR mode for BotW using the Wii U emulator called Cemu.
+BetterVR is a VR mod/hook that adds a PC-VR mode for Tears of the Kingdom using the Wii U emulator called Cemu.
 
 It currently supports the following features:
 * Fully stereo-rendered with 6DOF. No alternated eye rendering is used.
@@ -23,9 +23,9 @@ While more integrated solutions are being found out, there's probably ways to se
 
 * A gaming PC with a CPU that is good at single-threaded workloads (a recent Intel i5 or Ryzen 5 are recommended at least)!
 
-* A legal copy of BotW for the Wii U.
+* A legal copy of Tears of the Kingdom for the Wii U.
 
-* Windows OS. [It doesn't work under Linux (even with Wine/Proton) for now](https://github.com/Crementif/BotW-BetterVR/issues/18).
+* Windows OS. [It doesn't work under Linux (even with Wine/Proton) for now](https://github.com/atari643/BotW-BetterVR/issues/18).
 
 * A properly set up [Cemu](http://cemu.info/) emulator that's able to run at 60FPS or higher. See [this guide](https://cemu.cfw.guide/) for more info.
   * **Before reporting issues, make sure that you have a WORKING version of the game that can go in-game on your PC before you install this mod!**  
@@ -69,7 +69,7 @@ While more integrated solutions are being found out, there's probably ways to se
 
 ### Mod Installation
 
-1. Download the latest release of the mod from the [Releases](https://github.com/Crementif/BotW-BetterVR/releases) page.
+1. Download the latest release of the mod from the [Releases](https://github.com/atari643/BotW-BetterVR/releases) page.
 
 2. Extract the contents of the downloaded `.zip` file into the same folder where your `Cemu.exe` is stored.
    There should now be **at least** .dll, .json and multiple .bat files in the same folder as your `Cemu.exe`.
@@ -155,7 +155,7 @@ There's enough that was skipped over or left out in this explanation.
 Crementif: Main Developer  
 Acudofy: Sword & stab analysis system  
 Holydh: Developed some of the new input systems  
-leoetlino: For the [BotW Decomp project](https://github.com/zeldaret/botw), which was very useful  
+leoetlino: For the [TotK Decomp project](https://github.com/zeldaret/totk), which was very useful  
 Exzap: Technical support and optimization help  
 Mako Marci: Edited the trailer  
 Tim, Mako Marci, Solarwolf07 & Elliott Tate: Helped with testing, recording, feedback and support  

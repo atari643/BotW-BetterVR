@@ -17,7 +17,7 @@ moduleMatches = 0x6267BFD0
 currentEyeSide:
 .int 0
 
-; This is just a 0-1 counter. This is enough to have a two in-flight frames. Could be expanded, but BotW is fine with two.
+; This is just a 0-1 counter. This is enough to have a two in-flight frames. Could be expanded, but Tears of the Kingdom is fine with two.
 currentFrameCounter:
 .int 0
 
